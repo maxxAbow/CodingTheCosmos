@@ -1,0 +1,70 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+
+/* color variables */
+:root {
+  --nasaRed: #FC3D21;
+  --nasaBlue: #0B3D91;
+  --nasaWhite: #ffffff;
+  --nasaGrey: #aeb0b5;
+}
+
+* {
+  font-family: 'Orbitron', monospace;
+  color: var(--nasaWhite);
+}
+
+body {
+  background-image: url(../img/pawel-czerwinski-4pV6yhT01fg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+h1 {
+  font-size: 47px;
+  font-weight: 700;
+  margin-left: .4vw;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+}
+
+p.aight {
+  font-size: 26px;
+  margin-right: .9vw;
+  margin-left: 1vw;
+}
+
+.jumbotron {
+  margin-top: .9vh;
+}
+
+.emailSection {
+  margin-top: 2.3vh;
+}
+
+.gradient-text {
+  background-color: red;
+  background-image: linear-gradient(45deg, var(--nasaBlue), var(--nasaRed));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+button {
+  font-size: 26px;
+  border: none;
+  border-radius: 3px;
+  color: var(--nasaWhite);
+  background-color: var(--nasaBlue);
+  margin-bottom: 1vh;
+}
