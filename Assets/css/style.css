@@ -68,3 +68,7 @@ button {
   background-color: var(--nasaBlue);
   margin-bottom: 1vh;
 }
+
+#mars-photo {
+  margin-left: 250px;
+}
