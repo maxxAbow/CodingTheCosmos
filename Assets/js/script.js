@@ -16,6 +16,11 @@ var marsImgSrc = document.getElementById('mars-photo')
 
 
 
+var roverModal = document.getElementById("exampleModalCenter")
+var modalButton = document.getElementById('modal-btn')
+var solInfo = document.getElementById('sol')
+var earthDate = document.getElementById('earthdate')
+var camera = document.getElementById('camera')
 
 
 let modalBtn = document.getElementById("modal-btn")
@@ -44,8 +49,16 @@ fetch(photoURL)
     })
     .then (function(data) {
         console.log(data.photos[0].earth_date)
-        marsImgSrc.src=data.photos[0].img_src
         console.log(data.photos[0].sol)
+        console.log(data.photos[0].img_src)
+        marsImgSrc.src=data.photos[0].img_src
+        
+        solInfo.innerText = "Rover: " + data.photos[0].rover.name
+        earthDate.innerText = "Earth Date: " + data.photos[0].earth_date
+        camera.innerText = "Camera: " + data.photos[0].camera.full_name
+
+
+
     })
 
 
