@@ -21,6 +21,7 @@ var modalButton = document.getElementById('modal-btn')
 var solInfo = document.getElementById('sol')
 var earthDate = document.getElementById('earthdate')
 var camera = document.getElementById('camera')
+var roverStatus = document.getElementById("status")
 
 
 let modalBtn = document.getElementById("modal-btn")
@@ -56,7 +57,7 @@ fetch(photoURL)
         solInfo.innerText = "Rover: " + data.photos[0].rover.name
         earthDate.innerText = "Earth Date: " + data.photos[0].earth_date
         camera.innerText = "Camera: " + data.photos[0].camera.full_name
-
+        roverStatus.innerText = "Rover Status: " + data.photos[0].rover.status
 
 
     })
