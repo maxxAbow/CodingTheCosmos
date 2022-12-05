@@ -1,3 +1,2 @@
 var today = document.getElementById('dateToday');
-
-today.innerHTML = moment().format('LLLL');
+today.innerHTML=moment().format('LLLL');
