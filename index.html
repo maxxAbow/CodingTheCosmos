@@ -12,48 +12,25 @@
 </head>
 
 <body>
-  <!-- temp grid ref -->
-  <!-- <div class="container-fluid">
-    <div class="row">
-      <div class="col-1" style="background-color: red;">1</div>
-      <div class="col-1" style="background-color: black;">2</div>
-      <div class="col-1" style="background-color: blue;">3</div>
-      <div class="col-1" style="background-color: red;">4</div>
-      <div class="col-1" style="background-color: black;">5</div>
-      <div class="col-1" style="background-color: blue;">6</div>
-      <div class="col-1" style="background-color: red;">7</div>
-      <div class="col-1" style="background-color: black;">8</div>
-      <div class="col-1" style="background-color: blue;">9</div>
-      <div class="col-1" style="background-color: red;">10</div>
-      <div class="col-1" style="background-color: black;">11</div>
-      <div class="col-1" style="background-color: blue;">12</div>
-    </div>
-  </div> -->
-  
-  
-  
   <div class="navbar">
     <h1 class=""><img class=".d-flex .justify-content-center" src="./Assets/img/NASA_logo.svg.webp" alt=""
         style="max-width: 10vh;">Today on Mars</h1>
-    <!-- <img class=".d-flex .justify-content-center" src="./Assets/img/NASA_logo.svg.webp" alt=""
-      style="max-width: 20vh; border:1px solid red;"> -->
-    <p class="aight">Today's Date: <span class="gradient-text">December
-        1, 2022 </span></p>
+    <p class="aight">Earth Date: <span id='dateToday' class="gradient-text"></span></p>
   </div>
   <div class="jumbotron">
     <div class="container-fluid">
       <div class="row">
+
         <!-- either 6 or 8 -->
         <div class="col-sm-6 mx-auto">
           <h2 class="text-center">Mars Rover Photos</h2>
           <img  width ="400" height="400" id="mars-photo" src="./Assets/img/pawel-czerwinski-SJjNHXutJTU-unsplash.jpg" alt="Placeholder image"
             style="max-width:100%;">
         </div>
-        
-        <!-- either 6 or 4 -->
         <div class="col-sm-6">
-          <h2 class="text-center">Mars Weather Data</h2>
-          <p>Placeholder weather</p>
+          <h2 class="text-center">The Headlines</h2>
+          <h3>Today's published information from the Moon-to-Mars Space Weather Analysis Office:</h3>
+          <p id="donki"></p>
         </div>
       </div>
     <div class="row">
@@ -116,6 +93,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/notifications?api_key=jNaTZmpOkTNGqbyCyZipimLVQEiNfeKjWvkcEMe3"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
 
