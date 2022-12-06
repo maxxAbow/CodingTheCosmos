@@ -16,6 +16,6 @@ fetch(dataUrl)
   })
   .then(function (data) {
     console.log(data[0].messageBody);
-    var jargon = data[0].messageBody.replace(/\##/g, "</br>");
+    var jargon = data[0].messageBody.replace(/\##/g, "<br><br>");
     msgBody.innerHTML = jargon;
   })
