@@ -13,23 +13,25 @@
 
 <body>
   <div class="navbar">
-    <h1 class=""><img class=".d-flex .justify-content-center" src="./Assets/img/NASA_logo.svg.webp" alt=""
+    <h1 class=""><img class=".d-flex .justify-content-center" src="./Assets/img/nasa-logo.webp" alt=""
         style="max-width: 10vh;">Today on Mars</h1>
-    <p class="aight">Earth Date: <span id='dateToday' class="gradient-text"></span></p>
+    <p class="aight">Earth Date: <span id='dateToday' class="gradient-text-uno"></span></p>
   </div>
   <div class="jumbotron">
     <div class="container-fluid">
       <div class="row">
-
-        <!-- either 6 or 8 -->
-        <div class="col-sm-6 mx-auto">
+        <div class="col-sm-7">
           <h2 class="text-center">Mars Rover Photos</h2>
-          <img  width ="400" height="400" id="mars-photo" src="./Assets/img/pawel-czerwinski-SJjNHXutJTU-unsplash.jpg" alt="Placeholder image"
-            style="max-width:100%;">
+          <h3 class="lol  text-center">Current published photos from the<br><span class="gradient-text-dos">Mars
+              Perseverance Rover:</span></h3>
+          <img class="rover-pics" src="./Assets/img/background-img.jpg"
+            alt="A daily photo from the Mars Rover of Mars' Surface." style="max-width:100%;">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <h2 class="text-center">The Headlines</h2>
-          <h3>Today's published information from the Moon-to-Mars Space Weather Analysis Office:</h3>
+          <h3 class="lol text-center">Current published information from the<br><span
+              class="gradient-text-dos">Moon-to-Mars Space Weather Analysis
+              Office:</span></h3>
           <p id="donki"></p>
         </div>
       </div>
@@ -64,37 +66,81 @@
         </div>
       </div>
   </div>
-   
-  <div class="emailSection">
-    <div class="d-flex justify-content-center">
-      <p>Want to receive daily photos from the Mars Rover?</p>
-    </div>
-    <div class="d-flex justify-content-center">
+  <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+    </defs>
+    <g class="parallax1">
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="#FC3D21" />
+    </g>
+    <g class="parallax2">
+      <use xlink:href="#gentle-wave" x="50" y="0" fill="#0B3D91" />
+    </g>
+    <g class="parallax3">
+      <use xlink:href="#gentle-wave" x="50" y="9" fill="#ffffff" />
+    </g>
+    <g class="parallax4">
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="#aeb0b5" />
+    </g>
+  </svg>
+  <section class="emailBRO">
+    <div class="emailSection">
+      <div class="d-flex justify-content-center">
+        <p id="yo" class="gradient-text-uno">Want to receive daily photos from the Mars Rover?</p>
+      </div>
+      <!-- <div class="d-flex justify-content-center">
       <p>Sign up here below!</p>
-    </div>
-    <div class="d-flex justify-content-center">
-      <input type="text" placeholder="First Name">
-    </div>
-    <div class="d-flex justify-content-center">
-      <input type="text" placeholder="Last Name">
-    </div>
-    <div class="d-flex justify-content-center">
-      <input type="text" placeholder="Email">
-    </div>
-    <div class="d-flex justify-content-center custom-control custom-checkbox">
+    </div> -->
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="First Name">
+      </div>
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="Email">
+      </div>
+      <!-- <div class="d-flex justify-content-center custom-control custom-checkbox">
       <input type="checkbox" class="custom-control-input" id="customCheck1">
-      <label class="custom-control-label" for="customCheck1">Agree to receive emails</label>
+      <label class="custom-control-label" for="customCheck1">By checking this box, you agree to receive
+        emails</label>
+    </div> -->
+      <div class="d-flex justify-content-center">
+        <button type="button">Sign Up!</button>
+      </div>
     </div>
-    <div class="d-flex justify-content-center">
-      <button type="button">Sign Up!</button>
+  </section>
+  <footer class="text-center text-white" style="background-color: #000000;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"><a href="https://github.com/maxxAbow/spinningwasps">Repository</div>
+      </div>
+      <div class="row gh-links">
+        <h4>GitHub Links</h4>
+        <div class="col"><a href="https://github.com/maxxAbow">Maxx Bowman</div>
+        <div class="col"><a href="https://github.com/indwomt">Lauren Bentley</a></div>
+        <div class="col"><a href="https://github.com/veektur123">Victor Rivera</a></div>
+        <div class="col"><a href="https://github.com/yamiralim">Yamir Alim</a></div>
+        <div class="col"><a href="https://github.com/davidmackeydev">David Mackey</a></div>
+        <p class="poweredBy" style="color:white;">Powered by the <span class="gradient-text-uno">NASA API</span></p>
+      </div>
     </div>
-  </div>
+  </footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/notifications?api_key=jNaTZmpOkTNGqbyCyZipimLVQEiNfeKjWvkcEMe3"></script>
+  <script
+    src="https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/notifications?api_key=jNaTZmpOkTNGqbyCyZipimLVQEiNfeKjWvkcEMe3"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
 
