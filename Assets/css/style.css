@@ -1,5 +1,5 @@
 /* font import */
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
 
 /* color variables */
@@ -83,6 +83,19 @@ input {
 
 .emailSection {
   margin-top: 9vh;
+}
+
+footer {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.gh-links {
+  padding-top: 2vh;
+}
+
+.poweredBy {
+  padding-top: 2vh;
 }
 
 .gradient-text-uno {
