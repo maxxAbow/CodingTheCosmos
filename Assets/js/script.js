@@ -1,6 +1,5 @@
 //Earth date, upper right
 var today = document.getElementById('dateToday');
-
 today.innerHTML=moment().format('LLLL');
 
 //DONKI
