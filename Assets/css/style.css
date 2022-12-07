@@ -97,10 +97,13 @@ span#moonToMars {
 
 .rover-info {
   margin-top: 2vh;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 1vh;
   display: flex;
   background-color: var(--nasaGrey);
   justify-content: center;
+  border-radius: 30px;
 }
 
 .roverrr {
@@ -112,6 +115,7 @@ span#moonToMars {
 }
 
 #modal-btn {
+  margin-top: 3vh;
   position: relative;
   justify-content: center;
 }
@@ -191,6 +195,8 @@ button {
 
 #yo {
   margin-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -339,8 +345,9 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
 }
 
 .rover-pics {
-  margin: 0;
-  max-width: 100%;
+  display: block;
+  /* max-width: 50%; */
+  /* justify-content: center; */
 }
 
 .modal {
