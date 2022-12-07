@@ -8,108 +8,130 @@
   <title>Spinnin' Wasps</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Assets/css/breakpoint.css">
+  <!-- <link rel="stylesheet" href="./Assets/css/breakpoint.css"> -->
   <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
+  <!-- Navigation Section -->
   <div class="navbar">
-    <h1 class=""><img class=".d-flex .justify-content-center" src="./Assets/img/nasa-logo.webp" alt=""
-        style="max-width: 10vh;">Today on Mars</h1>
+    <h1 class=""><img id="nasaLogo" class=".d-flex .justify-content-center" src="./Assets/img/nasa-logo.webp" alt=""
+        style="max-width: 10vh;"><span id="marsTitle">Today on Mars</span></h1>
     <p class="aight">Earth Date: <span id='dateToday' class="gradient-text-uno"></span></p>
   </div>
+  <!-- Jumbotron Section -->
   <div class="jumbotron">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <h2 class="text-center">Mars Rover Photos</h2>
-          <h3 class="lol  text-center">Current published photos from the<br><span class="gradient-text-dos">Mars
-              Perseverance Rover:</span></h3>
-          <img id="mars-photo" class="rover-pics" src="" alt="A daily photo from the Mars Rover of Mars' Surface."
-            style="margin:0; padding-top:4.5vh;max-width:100%">
-          <!-- rover info section -->
+          <!-- Photo Section -->
+          <div>
+            <h2 class="text-center">Mars Rover Photos</h2>
+            <h3 class="lol text-center">Current published photos from the<br><span class="gradient-text-dos"
+                id="curiosity">Mars
+                Curiosity Rover:</span></h3>
+            <div class="row"></div>
+          </div>
+          <!-- Rover Details -->
           <div class="rover-info">
-            <p class="">Rover info</p>
-            <ul class="">
+            <p class="gradient-text-uno roverrr">Rover<br>Details:</p>
+            <ul class="roverdeets">
               <li id="sol">Sol:</li>
               <li id="earthdate">Earth Date: </li>
               <li id="camera">Camera: </li>
               <li id="status">Rover Status:</li>
             </ul>
-            <button id="modal-btn"> Choose a date</button>
+          </div>
+          <!-- Modal Section -->
+          <div class="col text-center">
+            <button id="modal-btn">Choose a Date</button>
             <div class="modal">
-              <div class="modal-content">
+              <div class="modal-content modal-dialog-centered">
                 <div class="modal-header">
                   <button class="close-btn">&times;</button>
-                  <h1>I am the Header</h1>
+                  <h1 class="">Header Section</h1>
                 </div>
                 <div class="modal-content">
-                  <p>this is the text inside the modal</p>
+                  <p>This is the text inside the modal.</p>
                 </div>
                 <div class="modal-footer">
-                  <h2>I am the Footer</h2>
+                  <h2>Footer Section</h2>
                 </div>
               </div>
-              <span class="close-btn">&times;</span>
-              <p>Choose a date</p>
+              <span class="close-btn"></span>
+              <p class="chooseDate">Choose a Date</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <h2 class="text-center">The Headlines</h2>
-          <h3 class="lol text-center">Current published information from the<br><span
-              class="gradient-text-dos">Moon-to-Mars Space Weather Analysis
-              Office:</span></h3>
-          <p id="donki"></p>
-        </div>
+        <!-- Rover Images -->
+        <img id="mars-photo" class="rover-pics" src="" alt="A daily photo from the Mars Rover of Mars' Surface.">
+      </div>
+      <!-- Weather Headlines -->
+      <div class="col headlineSection">
+        <h2 class="text-center headlines">The Headlines</h2>
+        <h3 class="lol text-center">Current published information from the<br><span class="gradient-text-dos"
+            id="moonToMars">Moon-to-Mars Space Weather Analysis Office:</span></h3>
+        <p id="donki"></p>
       </div>
     </div>
   </div>
-
-  <!-- email section -->
+  </div>
+  <!-- Email Form -->
   <section class="emailBRO">
     <div class="emailSection">
       <div class="d-flex justify-content-center">
         <p id="yo" class="gradient-text-uno">Want to receive daily photos from the Mars Rover?</p>
       </div>
-      <!-- <div class="d-flex justify-content-center">
-        <p>Sign up here below!</p>
-      </div> -->
       <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="First Name">
+        <input class="w-25" type="text" placeholder="First Name">
       </div>
       <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="Last Name">
+        <input class="w-25" type="text" placeholder="Last Name">
       </div>
       <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="Email">
+        <input class="w-25" type="text" placeholder="Email">
       </div>
-      <!-- <div class="d-flex justify-content-center custom-control custom-checkbox">
+      <div class="d-flex justify-content-center custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="customCheck1">
         <label class="custom-control-label" for="customCheck1">By checking this box, you agree to receive
           emails</label>
-        </div> -->
+      </div>
       <div class="d-flex justify-content-center">
         <button type="button">Sign Up!</button>
       </div>
     </div>
   </section>
+  <!-- Footer Section -->
   <footer class="text-center text-white" style="background-color: #000000;">
     <div class="container-fluid">
       <div class="row">
-        <div class="col"><a href="https://github.com/maxxAbow/spinningwasps">GitHub Repository</div>
-      </div>
-      <div class="row gh-links">
-        <h4>GitHub Links</h4>
-        <div class="col"><a href="https://github.com/maxxAbow">Maxx Bowman</div>
-        <div class="col"><a href="https://github.com/indwomt">Lauren Bentley</a></div>
-        <div class="col"><a href="https://github.com/veektur123">Victor Rivera</a></div>
-        <div class="col"><a href="https://github.com/yamiralim">Yamir Alim</a></div>
-        <div class="col"><a href="https://github.com/davidmackeydev">David Mackey</a></div>
-        <p class="poweredBy" style="color:white;">Powered by the <span class="gradient-text-uno">NASA API</span></p>
+        <p class="links">Links</p>
+        <h4><a class="repo" href="https://github.com/maxxAbow/spinningwasps">GitHub Repository</a></h4>
+        <div class="contributors">
+          <div class="col flex-fill"><a class="gh-contributor" href="https://github.com/maxxAbow" target="_blank">Maxx
+              Bowman</div>
+          <div class="col flex-fill"><a class="gh-contributor" href="https://github.com/indwomt" target="_blank">Lauren
+              Bentley</a>
+          </div>
+          <div class="col flex-fill"><a class="gh-contributor" href="https://github.com/davidmackeydev"
+              target="_blank">David
+              Mackey</a></div>
+          <div class="col flex-fill"><a class="gh-contributor" href="https://github.com/veektur123"
+              target="_blank">Victor
+              Rivera</a></div>
+          <div class="col flex-fill"><a class="gh-contributor" href="https://github.com/yamiralim" target="_blank">Yamir
+              Alim</a>
+          </div>
+        </div>
+        <p class="poweredBy" style="color:white;">Powered by <span class="gradient-text-uno"><a class="nasaAPI"
+              href="https://api.nasa.gov/" target="_blank">NASA API</a></span> and <span
+            class="gradient-text-tres spaaace"><a href="https://i.chzbgr.com/full/9137066752/hAA71EB21"
+              target="_blank">Spaaaaace.</a></span>
+        </p>
       </div>
     </div>
   </footer>
+  <!-- Animation -->
   <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 24 150 28 " preserveAspectRatio="none">
     <defs>
