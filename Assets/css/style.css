@@ -15,6 +15,11 @@
 * {
   font-family: 'Orbitron', monospace;
   color: var(--nasaWhite);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* navbar section */
@@ -44,7 +49,7 @@ body {
 
 h2 {
   margin-bottom: 2vh;
-  font-size: 36px;
+  font-size: 3rem;
   font-weight: 700px;
 }
 
@@ -86,6 +91,10 @@ span#moonToMars {
   padding-top: 3vh;
 }
 
+.roverdeets li {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .rover-info {
   margin-top: 2vh;
   padding-top: 1vh;
@@ -95,9 +104,11 @@ span#moonToMars {
 }
 
 .roverrr {
+  font-family: 'Orbitron', monospace;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   background-color: black;
+  padding-top: 1.1vh;
 }
 
 #modal-btn {
@@ -106,6 +117,8 @@ span#moonToMars {
 }
 
 #donki {
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 1em;
   color: var(--nasaGrey);
 }
@@ -128,12 +141,12 @@ footer {
   padding-bottom: 6vh;
 }
 
-.gh-links {
-  padding-top: 2vh;
+.repo {
+  text-decoration: none;
 }
 
 .poweredBy {
-  padding-top: 2vh;
+  padding-top: 5vh;
 }
 
 .gradient-text-uno {
@@ -154,8 +167,17 @@ footer {
   background-clip: text;
 }
 
+.gradient-text-tres {
+  background-image: linear-gradient(40deg, var(--nasaGrey), #090b48);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 button {
-  margin-top: 2vh;
+  margin-top: 1.3vh;
   margin-bottom: 3vh;
   padding: 5px;
   padding-left: 15px;
@@ -188,14 +210,28 @@ a {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.links {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--nasaGrey);
+}
 
+.contributors {
+  margin-top: 3vh;
+}
+
+.gh-contributor {
+  font-size: .9rem;
+  color: var(--nasaWhite);
+}
 
 .emailBRO {
   margin-top: -8vh;
   background-color: var(--nasaGrey);
 }
 
-.nasaAPI {
+.nasaAPI,
+.spaaace {
   font-family: 'Orbitron', monospace;
   font-size: 1.5rem;
 }
