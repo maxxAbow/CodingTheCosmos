@@ -1,157 +1,25 @@
-/* font import */
+/* ============ */
+/* Font Imports */
+/* ========== */
+
 @import url(../fonts/JetBrainsMono-Regular.woof2);
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
 
-/* color variables */
+/* ================ */
+/* Color Variables */
+/* ============== */
+
 :root {
   --nasaRed: #FC3D21;
   --nasaBlue: #0B3D91;
   --nasaWhite: #ffffff;
   --nasaGrey: #aeb0b5;
+  --nasaBlack: #000000;
 }
 
-/* universal selector */
-* {
-  font-family: 'Orbitron', monospace;
-  color: var(--nasaWhite);
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* navbar section */
-.navbar {
-  padding-top: 2vh;
-  background-image: url(../img/background-img.jpg);
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-
-/* body section */
-body {
-  background-color: var(--nasaBlue);
-}
-
-#nasaLogo {
-  margin-left: 1vw;
-  margin-bottom: .5vh;
-}
-
-#marsTitle {
-  text-decoration: underline;
-  font-size: 4rem;
-  font-weight: 700;
-  margin-left: 1vw;
-}
-
-h2 {
-  margin-bottom: 2vh;
-  font-size: 3rem;
-  font-weight: 700px;
-}
-
-p {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-}
-
-.aight {
-  font-size: 26px;
-  margin-right: 1.8vw;
-  margin-left: 1vw;
-}
-
-.jumbotron {
-  margin-top: 2vh;
-}
-
-li {
-  list-style: none;
-}
-
-.text-center {
-  color: #FC3D21;
-}
-
-.lol {
-  font-family: 'JetBrains Mono', monospace;
-  color: var(--nasaWhite);
-}
-
-span#curiosity,
-span#moonToMars {
-  display: block;
-  padding-top: 1vh;
-}
-
-.headlines {
-  padding-top: 3vh;
-}
-
-.roverdeets li {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.rover-info {
-  margin-top: 2vh;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 1vh;
-  display: flex;
-  background-color: var(--nasaGrey);
-  justify-content: center;
-  border-radius: 30px;
-}
-
-.roverrr {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: black;
-  padding-top: 1.1vh;
-}
-
-#modal-btn {
-  margin-top: 3vh;
-  position: relative;
-  justify-content: center;
-}
-
-#donki {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1em;
-  color: var(--nasaGrey);
-}
-
-input {
-  color: black;
-  text-align: center;
-}
-
-.emailSection {
-  margin-top: 9vh;
-}
-
-.headlineSection {
-  padding-bottom: 1vh;
-}
-
-footer {
-  padding-top: 3vh;
-  padding-bottom: 6vh;
-}
-
-.repo {
-  text-decoration: none;
-}
-
-.poweredBy {
-  padding-top: 5vh;
-}
+/* ============== */
+/* Gradient Text */
+/* ============ */
 
 .gradient-text-uno {
   background-image: linear-gradient(45deg, var(--nasaBlue), var(--nasaRed));
@@ -180,6 +48,10 @@ footer {
   background-clip: text;
 }
 
+/* ============= */
+/* Button Style */
+/* =========== */
+
 button {
   margin-top: 1.3vh;
   margin-bottom: 3vh;
@@ -193,6 +65,222 @@ button {
   background-color: var(--nasaRed);
 }
 
+/* =================== */
+/* Universal Selectors */
+/* ================= */
+
+* {
+  font-family: 'Orbitron', monospace;
+  color: var(--nasaWhite);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+}
+
+/* ============= */
+/* Body Section */
+/* =========== */
+
+body {
+  background-color: var(--nasaBlue);
+}
+
+/* =============== */
+/* Navbar Section */
+/* ============= */
+
+.navbar {
+  padding-top: 2vh;
+  background-image: url(../img/background-img.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#nasaLogo {
+  margin-left: 1vw;
+  margin-bottom: .5vh;
+}
+
+#marsTitle {
+  text-decoration: underline;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 1vw;
+}
+
+.aight {
+  font-size: 26px;
+  margin-right: 1.8vw;
+  margin-left: 1vw;
+}
+
+/* ================== */
+/* Jumbotron Section */
+/* ================ */
+
+.jumbotron {
+  margin-top: 2vh;
+}
+
+h2 {
+  margin-bottom: 2vh;
+  font-size: 3rem;
+  font-weight: 700px;
+}
+
+.text-center {
+  color: var(--nasaRed);
+}
+
+/* ============== */
+/* Photo Section */
+/* ============ */
+
+.lol {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--nasaWhite);
+}
+
+#curiosity {
+  display: block;
+  padding-top: 1vh;
+}
+
+/* ===================== */
+/* Rover Detail Section */
+/* =================== */
+
+li {
+  list-style: none;
+}
+
+.roverdeets li {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.rover-info {
+  margin-top: 2vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1vh;
+  display: flex;
+  background-color: var(--nasaGrey);
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.roverrr {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--nasaBlack);
+  padding-top: 1.1vh;
+}
+
+/* ============== */
+/* Modal Section */
+/* ============ */
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--nasaBlack);
+  padding: 20px;
+  margin: auto;
+  width: 75%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* ========== */
+/* Modal Btn */
+/* ======== */
+
+#modal-btn {
+  margin-top: 3vh;
+  position: relative;
+  justify-content: center;
+}
+
+.close-btn {
+  float: right;
+  margin-right: 1vw;
+  color: var(--nasaWhite);
+  background-color: var(--nasaBlue);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  background-color: var(--nasaRed);
+}
+
+/* ================== */
+/* Headlines Section */
+/* ================ */
+
+.headlines {
+  padding-top: 3vh;
+}
+
+span#moonToMars {
+  display: block;
+  padding-top: 1vh;
+}
+
+.headlineSection {
+  padding-bottom: 1vh;
+}
+
+#donki {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1em;
+  color: var(--nasaGrey);
+}
+
+/* ============= */
+/* Rover Images */
+/* =========== */
+
+.rover-pics {
+  display: block;
+  /* max-width: 50%; */
+  /* justify-content: center; */
+}
+
+/* ============== */
+/* Email Section */
+/* ============ */
+
+.emailBRO {
+  margin-top: -8vh;
+  background-color: var(--nasaGrey);
+}
+
+.emailSection {
+  margin-top: 9vh;
+}
+
 #yo {
   margin-top: 2vh;
   padding-left: 2vw;
@@ -202,15 +290,44 @@ button {
 }
 
 input {
+  color: var(--nasaBlack);
+  text-align: center;
   margin: 6px;
   font-size: 1.2rem;
   border-radius: 1px;
   border-color: var(--nasaBlue);
 }
 
+/* =============== */
+/* Footer Section */
+/* ============= */
+
+footer {
+  padding-top: 3vh;
+  padding-bottom: 6vh;
+}
+
 h4 {
   font-family: 'JetBrains Mono', monospace;
 }
+
+.repo {
+  text-decoration: none;
+}
+
+.poweredBy {
+  padding-top: 5vh;
+}
+
+.nasaAPI,
+.spaaace {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+}
+
+/* ====== */
+/* Links */
+/* ==== */
 
 a {
   font-family: 'JetBrains Mono', monospace;
@@ -231,27 +348,9 @@ a {
   color: var(--nasaWhite);
 }
 
-.emailBRO {
-  margin-top: -8vh;
-  background-color: var(--nasaGrey);
-}
-
-.nasaAPI,
-.spaaace {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.5rem;
-}
-
-HTML CSSResult Skip Results Iframe EDIT ON body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-}
-
-.roverInfo {
-  margin-left: 24%;
-  margin-top: 2vh
-}
+/* ================== */
+/* Animation Section */
+/* ================ */
 
 .editorial {
   margin-top: 2vh;
@@ -265,6 +364,12 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
   position: fixed;
   left: 0px;
   float: left;
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--nasaBlack);
 }
 
 .parallax1>use {
@@ -342,47 +447,6 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
   /* 
   /* =======background-color: var(--nasaBlue);
   margin-bottom: 1vh; */
-}
-
-.rover-pics {
-  display: block;
-  /* max-width: 50%; */
-  /* justify-content: center; */
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  position: relative;
-  background-color: white;
-  padding: 20px;
-  margin: auto;
-  width: 75%;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-.close-btn {
-  float: right;
-  color: lightgray;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.close-btn:hover {
-  color: darkgray;
 }
 
 @-webkit-keyframes animatetop {
