@@ -8,6 +8,7 @@
   <title>Spinnin' Wasps</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/css/breakpoint.css">
   <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
@@ -20,14 +21,41 @@
   <div class="jumbotron">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col">
           <h2 class="text-center">Mars Rover Photos</h2>
           <h3 class="lol  text-center">Current published photos from the<br><span class="gradient-text-dos">Mars
               Perseverance Rover:</span></h3>
-          <img class="rover-pics" src="./Assets/img/background-img.jpg"
-            alt="A daily photo from the Mars Rover of Mars' Surface." style="max-width:100%;">
+          <img id="mars-photo" class="rover-pics" src="" alt="A daily photo from the Mars Rover of Mars' Surface."
+            style="margin:0; padding-top:4.5vh;max-width:100%">
+          <!-- rover info section -->
+          <div class="rover-info">
+            <p class="">Rover info</p>
+            <ul class="">
+              <li id="sol">Sol:</li>
+              <li id="earthdate">Earth Date: </li>
+              <li id="camera">Camera: </li>
+              <li id="status">Rover Status:</li>
+            </ul>
+            <button id="modal-btn"> Choose a date</button>
+            <div class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close-btn">&times;</button>
+                  <h1>I am the Header</h1>
+                </div>
+                <div class="modal-content">
+                  <p>this is the text inside the modal</p>
+                </div>
+                <div class="modal-footer">
+                  <h2>I am the Footer</h2>
+                </div>
+              </div>
+              <span class="close-btn">&times;</span>
+              <p>Choose a date</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col">
           <h2 class="text-center">The Headlines</h2>
           <h3 class="lol text-center">Current published information from the<br><span
               class="gradient-text-dos">Moon-to-Mars Space Weather Analysis
@@ -35,46 +63,62 @@
           <p id="donki"></p>
         </div>
       </div>
-    <div class="row">
-          <div class="col-3 m-6">
-            <p>Rover info</p>
-            <ul>
-              <li id="sol">Sol:</li>
-              <li id= "earthdate">Earth Date: </li>
-              <li id="camera">Camera: </li>
-              <li id="status">Rover Status:</li>
-            </ul>
-            <button id="modal-btn"> Choose a date</button>
-<div class="modal">
-                <div class="modal-content">
-                  <div class="modal-header">
-        <button class="close-btn">&times;</button>
-        <h1>I am the Header</h1>
-                  </div>
-      <div class="modal-content">
-        <p>this is the text inside the modal</p>
-                  </div>
-                  <div class="modal-footer">
-        <h2>I am the Footer</h2>
-                  </div>
-                </div>
-    <span class="close-btn">&times;</span>
-    <p>Choose a date</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
   </div>
+
+  <!-- email section -->
+  <section class="emailBRO">
+    <div class="emailSection">
+      <div class="d-flex justify-content-center">
+        <p id="yo" class="gradient-text-uno">Want to receive daily photos from the Mars Rover?</p>
+      </div>
+      <!-- <div class="d-flex justify-content-center">
+        <p>Sign up here below!</p>
+      </div> -->
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="First Name">
+      </div>
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="d-flex justify-content-center span-6">
+        <input type="text" placeholder="Email">
+      </div>
+      <!-- <div class="d-flex justify-content-center custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">By checking this box, you agree to receive
+          emails</label>
+        </div> -->
+      <div class="d-flex justify-content-center">
+        <button type="button">Sign Up!</button>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center text-white" style="background-color: #000000;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"><a href="https://github.com/maxxAbow/spinningwasps">GitHub Repository</div>
+      </div>
+      <div class="row gh-links">
+        <h4>GitHub Links</h4>
+        <div class="col"><a href="https://github.com/maxxAbow">Maxx Bowman</div>
+        <div class="col"><a href="https://github.com/indwomt">Lauren Bentley</a></div>
+        <div class="col"><a href="https://github.com/veektur123">Victor Rivera</a></div>
+        <div class="col"><a href="https://github.com/yamiralim">Yamir Alim</a></div>
+        <div class="col"><a href="https://github.com/davidmackeydev">David Mackey</a></div>
+        <p class="poweredBy" style="color:white;">Powered by the <span class="gradient-text-uno">NASA API</span></p>
+      </div>
+    </div>
+  </footer>
   <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 24 150 28 " preserveAspectRatio="none">
     <defs>
       <path id="gentle-wave" d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z" />
+          58-18 88-18s
+          58 18 88 18 
+          58-18 88-18 
+          58 18 88 18
+          v44h-352z" />
     </defs>
     <g class="parallax1">
       <use xlink:href="#gentle-wave" x="50" y="3" fill="#FC3D21" />
@@ -89,49 +133,6 @@
       <use xlink:href="#gentle-wave" x="50" y="6" fill="#aeb0b5" />
     </g>
   </svg>
-  <section class="emailBRO">
-    <div class="emailSection">
-      <div class="d-flex justify-content-center">
-        <p id="yo" class="gradient-text-uno">Want to receive daily photos from the Mars Rover?</p>
-      </div>
-      <!-- <div class="d-flex justify-content-center">
-      <p>Sign up here below!</p>
-    </div> -->
-      <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="First Name">
-      </div>
-      <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="Last Name">
-      </div>
-      <div class="d-flex justify-content-center span-6">
-        <input type="text" placeholder="Email">
-      </div>
-      <!-- <div class="d-flex justify-content-center custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input" id="customCheck1">
-      <label class="custom-control-label" for="customCheck1">By checking this box, you agree to receive
-        emails</label>
-    </div> -->
-      <div class="d-flex justify-content-center">
-        <button type="button">Sign Up!</button>
-      </div>
-    </div>
-  </section>
-  <footer class="text-center text-white" style="background-color: #000000;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-2"><a href="https://github.com/maxxAbow/spinningwasps">Repository</div>
-      </div>
-      <div class="row gh-links">
-        <h4>GitHub Links</h4>
-        <div class="col"><a href="https://github.com/maxxAbow">Maxx Bowman</div>
-        <div class="col"><a href="https://github.com/indwomt">Lauren Bentley</a></div>
-        <div class="col"><a href="https://github.com/veektur123">Victor Rivera</a></div>
-        <div class="col"><a href="https://github.com/yamiralim">Yamir Alim</a></div>
-        <div class="col"><a href="https://github.com/davidmackeydev">David Mackey</a></div>
-        <p class="poweredBy" style="color:white;">Powered by the <span class="gradient-text-uno">NASA API</span></p>
-      </div>
-    </div>
-  </footer>
 
 
 
