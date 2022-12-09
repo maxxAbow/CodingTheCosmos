@@ -10,6 +10,11 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="./Assets/css/breakpoint.css"> -->
   <link rel="stylesheet" href="./Assets/css/style.css">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  
 </head>
 
 <body>
@@ -48,6 +53,7 @@
               <li id="camera">Camera: </li>
               <li id="status">Rover Status:</li>
             </ul>
+            <button id="modal-btn"> Choose a date</button>
           </div>
           <!-- Modal Section -->
           <div class="col text-center">
@@ -55,13 +61,13 @@
               <div class="modal-content modal-dialog-centered">
                 <div class="modal-header">
                   <button class="close-btn">&times;</button>
-                  <h1 class="">Header Section</h1>
+                
                 </div>
                 <div class="modal-content">
-                  <p>This is the text inside the modal.</p>
+                  <p>Enter date <input type="text" id="date-picker"></p>
                 </div>
                 <div class="modal-footer">
-                  <h2>Footer Section</h2>
+                  <h2 id="disclaimer"> Please note photos are only available 2 days prior to the current date.</h2>
                 </div>
               </div>
               <span class="close-btn"></span>
