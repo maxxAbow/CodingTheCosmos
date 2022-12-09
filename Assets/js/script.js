@@ -6,8 +6,11 @@ var today = document.getElementById('dateToday');
 
 var apiKeyPicture = "vbBdCkMZKqwb4qJwGH4og1wD1L5EJKlW5gF4m9m4"
 
+var today = new Date()
 
-var photoURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2022-8-3&api_key=" + apiKeyPicture
+var dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
+
+var photoURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${dateString}&api_key=${apiKeyPicture}`
 
 // Retrieve photo url from link
 
