@@ -473,3 +473,18 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
     opacity: 1
   }
 }
+
+.email-label{
+  color: black;
+}
+.first-name-label{
+  color: black
+}
+.last-name-label{
+  color: black
+}
+
+#mc_embed_signup{
+  margin-left: auto;
+  margin-right: auto;
+}
