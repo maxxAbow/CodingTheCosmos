@@ -170,6 +170,7 @@ li {
   margin-top: 2vh;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 10px;
   padding-top: 1vh;
   display: flex;
   background-color: var(--nasaGrey);
@@ -472,4 +473,19 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
     top: 0;
     opacity: 1
   }
+}
+
+.email-label{
+  color: black;
+}
+.first-name-label{
+  color: black
+}
+.last-name-label{
+  color: black
+}
+
+#mc_embed_signup{
+  margin-left: auto;
+  margin-right: auto;
 }
