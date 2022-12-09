@@ -6,11 +6,7 @@ var today = document.getElementById('dateToday');
 
 var apiKeyPicture = "vbBdCkMZKqwb4qJwGH4og1wD1L5EJKlW5gF4m9m4"
 
-var today = new Date()
-
-var dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
-
-var photoURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${dateString}&api_key=${apiKeyPicture}`
+var photoURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${apiKeyPicture}`
 
 // Retrieve photo url from link
 
@@ -21,19 +17,14 @@ var marsImgSrc = document.getElementById('mars-photo')
 
 
 var roverModal = document.getElementById("exampleModalCenter")
-var modalButton = document.getElementById('modal-btn')
 var solInfo = document.getElementById('sol')
 var earthDate = document.getElementById('earthdate')
 var camera = document.getElementById('camera')
 var roverStatus = document.getElementById("status")
 
 
-let modalBtn = document.getElementById("modal-btn")
 let modal = document.querySelector(".modal")
 let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function () {
-  modal.style.display = "block"
-}
 closeBtn.onclick = function () {
   modal.style.display = "none"
 }
@@ -48,15 +39,13 @@ fetch(photoURL)
     return response.json();
   })
   .then(function (data) {
-    console.log(data.photos[0].earth_date)
-    console.log(data.photos[0].sol)
-    console.log(data.photos[0].img_src)
-    marsImgSrc.src = data.photos[0].img_src
+    var latestPhoto = data.latest_photos[0]
+    marsImgSrc.src = latestPhoto.img_src
 
-    solInfo.innerText = "Rover: " + data.photos[0].rover.name
-    earthDate.innerText = "Earth Date: " + data.photos[0].earth_date
-    camera.innerText = "Camera: " + data.photos[0].camera.full_name
-    roverStatus.innerText = "Rover Status: " + data.photos[0].rover.status
+    solInfo.innerText = "Rover: " + latestPhoto.rover.name
+    earthDate.innerText = "Earth Date: " + latestPhoto.earth_date
+    camera.innerText = "Camera: " + latestPhoto.camera.full_name
+    roverStatus.innerText = "Rover Status: " + latestPhoto.rover.status
 
 
   })
