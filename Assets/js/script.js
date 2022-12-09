@@ -43,9 +43,9 @@ window.onclick = function(e){
 }
 
 
-$(function() {
-    $("#date-picker").datepicker()
-  })
+$( function() {
+  $( "#date-picker" ).datepicker({dateFormat:'yy-mm-dd'});
+} );
 
   fetch(photoURL)
   .then(function (response) {
