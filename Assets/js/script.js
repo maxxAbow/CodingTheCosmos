@@ -38,26 +38,14 @@ window.onclick = function(e){
   if(e.target == modal){
     modal.style.display = "none"
   }
+
+
 }
-
-
-
 
 
 $( function() {
   $( "#date-picker" ).datepicker({dateFormat:'yy-mm-dd'});
 } );
-
-var x = document.getElementById("data-picker").value
-function getDate() {
-  var x = document.getElementById("date-picker").value;
-  console.log(x)
-}
-
-// function getDate(){
-  // var a = $( "#date-picker" ).datepicker("getDate");
-  // console.log(a)
-// }
 
   fetch(photoURL)
   .then(function (response) {
