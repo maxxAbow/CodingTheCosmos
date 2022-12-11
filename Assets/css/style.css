@@ -171,6 +171,7 @@ li {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10px;
+  padding-left: 5%;
   padding-top: 1vh;
   display: flex;
   background-color: var(--nasaGrey);
@@ -221,7 +222,7 @@ li {
 /* Modal Btn */
 /* ======== */
 
-#modal-btn {
+.modal-btn {
   margin-top: 3vh;
   position: relative;
   justify-content: center;
@@ -281,6 +282,7 @@ span#moonToMars {
 .emailBRO {
   margin-top: -8vh;
   background-color: var(--nasaGrey);
+  padding-bottom: 2vh;
 }
 
 .emailSection {
@@ -304,13 +306,27 @@ input {
   border-color: var(--nasaBlue);
 }
 
+#mc_embed_signup {
+  background: var(--nasaWhite);
+  clear: left;
+  width: 70%;
+}
+
+input#mc-embedded-subscribe.button.heyo {
+  background-color: var(--nasaBlue);
+}
+
+input#mc-embedded-subscribe.button.heyo:hover {
+  background-color: var(--nasaRed);
+}
+
 /* 
 .sign-up-below {
   text-align: center;
   font-family: 'JetBrains Mono NL', monospace;
 }
 
-.subscribe-btn {
+#mc_embed_signup.subscribe-btn {
   background-color: var(--nasaRed);
   position: relative;
   justify-content: center;
