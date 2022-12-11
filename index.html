@@ -47,10 +47,10 @@
           <div class="rover-info">
             <p class="gradient-text-uno roverrr">Rover<br>Details:</p>
             <ul class="roverdeets">
-              <li id="sol">Sol:</li>
+              <li id="sol">Sol: </li>
               <li id="earthdate">Earth Date: </li>
               <li id="camera">Camera: </li>
-              <li id="status">Rover Status:</li>
+              <li id="status">Rover Status: </li>
             </ul>
           </div>
           <div class="col text-center">
@@ -59,20 +59,22 @@
           <!-- Modal Section -->
           <div class="col text-center">
             <div class="modal">
-              <div class="modal-content modal-dialog-centered">
-                <div class="modal-header">
-                  <button class="close-btn">&times;</button>
-                </div>
+              <div class="modal-dialog-centered">
                 <div class="modal-content">
-                  <p>Enter date <input type="text" id="date-picker"></p>
-                  <button onclick="me()" id="date-submit">Submit</button>
-                </div>
-                <div class="modal-footer">
-                  <h2 id="disclaimer"> Please note photos are only available 2 days prior to the current date.</h2>
+                  <div class="modal-header">
+                    <button class="close-btn">&times;</button>
+                  </div>
+                  <div class="modal-content">
+                    <p>Click to Enter date:<input type="text" id="date-picker"></p>
+                    <button onclick="me()" id="date-submit">Submit</button>
+                  </div>
+                  <div class="modal-footer">
+                    <h2 id="disclaimer">Please note photos are only available 2 days prior to the current date.</h2>
+                  </div>
                 </div>
               </div>
-              <span class="close-btn"></span>
-              <p class="chooseDate">Choose a Date</p>
+              <!-- <span class="close-btn"></span> -->
+              <!-- <p class="chooseDate">Choose a Date</p> -->
             </div>
           </div>
         </div>
