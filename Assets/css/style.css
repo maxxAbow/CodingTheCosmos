@@ -304,6 +304,24 @@ input {
   border-color: var(--nasaBlue);
 }
 
+#mc_embed_signup {
+  background: #aeb0b5;
+  clear: left;
+  /* font: 14px Helvetica, Arial, sans-serif; */
+  width: 60vw;
+}
+
+.sign-up-below {
+  text-align: center;
+  font-family: 'JetBrains Mono NL', monospace;
+}
+
+.subscribe-btn {
+  background-color: var(--nasaRed);
+  position: relative;
+  justify-content: center;
+}
+
 /* =============== */
 /* Footer Section */
 /* ============= */
@@ -479,17 +497,19 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
   }
 }
 
-.email-label{
+.email-label {
   color: black;
 }
-.first-name-label{
-  color: black
-}
-.last-name-label{
+
+.first-name-label {
   color: black
 }
 
-#mc_embed_signup{
+.last-name-label {
+  color: black
+}
+
+#mc_embed_signup {
   margin-left: auto;
   margin-right: auto;
 }
