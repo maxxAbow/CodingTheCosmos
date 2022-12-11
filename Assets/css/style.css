@@ -304,13 +304,7 @@ input {
   border-color: var(--nasaBlue);
 }
 
-#mc_embed_signup {
-  background: #aeb0b5;
-  clear: left;
-  /* font: 14px Helvetica, Arial, sans-serif; */
-  width: 60vw;
-}
-
+/* 
 .sign-up-below {
   text-align: center;
   font-family: 'JetBrains Mono NL', monospace;
@@ -320,7 +314,7 @@ input {
   background-color: var(--nasaRed);
   position: relative;
   justify-content: center;
-}
+} */
 
 /* =============== */
 /* Footer Section */
