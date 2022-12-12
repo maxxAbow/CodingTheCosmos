@@ -4,7 +4,7 @@
 
 This web application displays various information about weather data and photographs captured from the Mars Rover, *Curiosity*.
 
-`*Curiosity* is a car-sized Mars rover designed to explore the Gale crater on Mars as part of NASA's Mars Science Laboratory mission. *Curiosity* was launched from Cape Canaveral on November 26, 2011, at 15:02:00 UTC and landed on Aeolis Palus inside Gale crater on Mars on August 6, 2012, 05:17:57 UTC.`
+`Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars as part of NASA's Mars Science Laboratory mission. Curiosity was launched from Cape Canaveral on November 26, 2011, at 15:02:00 UTC and landed on Aeolis Palus inside Gale crater on Mars on August 6, 2012, 05:17:57 UTC.`
 
 We were genuinely **curious** to explore Mars. So we decided to create *Coding the Cosmos*. It was quite the expedition.
 
