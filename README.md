@@ -41,7 +41,7 @@ Also, there is a simple "Choose a Date" button for picking a picture from a prev
 
 ## Usage
 
-![Landing Page Screenshot](./assets/img/screenshot.png)
+![Landing Page Screenshot](./Assets/img/screenshot.png)
 
 ## License
 
